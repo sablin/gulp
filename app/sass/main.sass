@@ -1,2 +1,487 @@
+@font-face
+	font-family: 'OpenSans'
+	src: url('../fonts/opensans/OpenSans-Regular.ttf') format('truetype');
+@font-face
+	font-family: 'OpenSans-Bold'
+	src: url('../fonts/opensans/OpenSans-Bold.ttf') format('truetype');
+@font-face
+	font-family: 'Lemontuesday'
+	src: url('../fonts/lemonTuesday/Lemontuesday.ttf') format('truetype');
+@font-face
+	font-family: 'OpenSans-Italic'
+	src: url('../fonts/opensans/OpenSans-Italic.ttf') format('truetype');
+@font-face
+	font-family: 'OpenSans-light'
+	src: url('../fonts/opensans/OpenSans-light.ttf') format('truetype');
+@font-face
+	font-family: 'RobotoSlab-Bold'
+	src: url('../fonts/robotoSlab/RobotoSlab-Bold.ttf') format('truetype');
+html
+	height: 100%
 body
-	background-color: pink
+	margin: 0
+	padding: 0
+	font-family: OpenSans, sans-serif
+	min-width: 1230px
+	display: flex
+	flex-direction: column
+	height: 100%
+main
+	flex: 1 0 auto
+.container
+	width: 1160px
+	margin: 0 auto
+	position: relative
+img
+	max-width: 100%
+a
+	text-decoration: none
+.green
+	color: #84c604
+.orange
+	color: white
+	background: #fd4f10
+i
+	padding-right: 6px
+.hide
+	display: none
+ul
+	list-style: none
+	padding-inline-start: 0
+button, button:active, button:focus
+	outline: 0
+	&::-moz-focus-inner 
+  		border: 0
+h2
+	font-family: Lemontuesday, sans-serif
+	font-size: 60px
+	text-align: center
+	padding: 0 20px 50px
+	color: #32505a
+	margin: 0
+	&:before
+		content: ''
+		background: url('../img/header-befour.png') no-repeat center
+		display: inline-block
+		width: 100px
+		height: 50px
+		padding-right: 40px
+	&:after
+		content: ''
+		background: url('../img/header-after.png') no-repeat center
+		display: inline-block
+		width: 100px
+		height: 50px
+		padding-left: 40px
+section
+	padding: 20px
+.owl-carousel 
+	.owl-item 
+		img
+			max-width: 100%
+.header
+	flex: 0 0 auto
+	.top-line
+		padding: 10px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-size: 14px
+	.callback
+		color: #84c604
+		border: 1px solid #84c604
+		padding: 10px 15px
+		text-transform: uppercase
+		border-radius: 6px
+		margin-left: 20px
+		font-family: OpenSans-Bold
+		transition: all 0.2s
+		&:hover
+			background: #84c604
+			color: white
+	.top-phone
+		display: flex
+		justify-content: space-around
+	.phone-bold
+		font-size: 18px
+		font-family: OpenSans-Bold
+	.nav-clone
+		height: 50px
+		display: block
+		width: 100%
+		display: none
+	nav
+		border-top: 1px solid #f2f2f2
+		ul
+			display: flex
+			justify-content: space-between
+			height: 50px
+			align-items: center
+			margin: 0
+			padding: 0
+			overflow: hidden
+			li
+				list-style-type: none
+				box-sizing: border-box
+				&:first-child
+					background-image: url('../img/menu-arrow.png')
+					background-position: right
+					background-repeat: no-repeat
+					position: relative
+					&:hover
+						opacity: 0.5
+					a
+						&:hover
+							background: none
+							color: black
+				a
+					padding: 20px
+					color: black
+					transition: all 0.2s
+					text-transform: uppercase
+					font-family: OpenSans-Bold, sans-serif
+					&:hover
+						color: white
+						background: #84c604
+				ul.sub-menu
+					display: none
+	.fixed
+		position: fixed
+		top: 0
+		text-align: center
+		background: white
+		z-index: 9999
+		width: 100%
+.top-carousel
+	button.owl-dot
+		width: 10px
+		height: 10px
+		border: 1px solid white
+		border-radius: 50%
+		margin: 10px
+	button.owl-dot.active
+		background: #84c604
+	.owl-dots
+		position: absolute
+		bottom: 50px
+		left: 50%
+	.owl-nav
+		position: absolute
+		width: 100%
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		top: 0
+		button.owl-prev
+			background: url('../img/arrow2.png') no-repeat center
+			height: 60px
+			width: 60px
+			margin-left: 100px
+		button.owl-next
+			background: url('../img/arrow1.png') no-repeat center
+			height: 60px
+			width: 60px	
+			margin-right: 100px
+.food-carousel
+	button.owl-dot
+		width: 10px
+		height: 10px
+		border: 1px solid white
+		border-radius: 50%
+		margin: 10px
+		background: #b3b3b3
+	button.owl-dot.active
+		background: #84c604
+	.owl-dots
+		text-align: center
+		display: block
+		margin: 50px auto 0
+		position: relative
+		z-index: 666
+		width: 100px
+	.owl-nav
+		position: absolute
+		width: 100%
+		display: flex
+		justify-content: center
+		bottom: -5px
+		button.owl-prev
+			background: url('../img/left-arrow.png') no-repeat center
+			height: 40px
+			width: 40px
+			margin-right: 50px
+			transition: all 0.5s
+			&:hover
+				opacity: 0.5
+		button.owl-next
+			background: url('../img/right-arrow.png') no-repeat center
+			height: 40px
+			width: 40px	
+			margin-left: 50px
+			transition: all 0.5s
+			&:hover
+				opacity: 0.5
+.slide
+	position: relative
+	height: 670px
+	width: 100%
+	background-image: url(../img/slider-image.jpg)
+	display: flex
+	align-items: center
+	justify-content: left
+	flex-wrap: wrap
+	.slide-info
+		display: flex
+		flex-direction: column
+		.slide-name
+			font-family: Lemontuesday, sans-serif
+			font-size: 110px
+			line-height: 100px
+			margin: 50px 0
+		.slide-description
+			font-size: 26px
+			color: white
+			font-family: OpenSans-Italic, sans-serif
+		.slide-more
+			padding: 20px 70px
+			width: 140px
+			text-align: center
+			text-transform: uppercase
+			border-radius: 8px
+			margin: 50px 0
+			transition: all 0.2s
+			&:hover
+				background: #b33000
+	.slide-sale
+		position: absolute
+		color: white
+		left: 50%
+		width: 138px
+		height: 138px
+		background: #d82024
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 50%
+		font-family: OpenSans-Bold, sans-serif
+		text-align: center
+		font-size: 28px
+.food-slide
+	width: 265px
+	text-align: center
+	.spec
+		position: absolute
+		top: 15px
+		right: 37px
+	img
+    	margin: 0 auto
+	.food-slide__text
+		padding: 0 25px
+	.food-name
+		font-size: 20px
+		font-family: OpenSans-Bold, sans-serif
+		margin: 25px 0
+	.select
+		display: inline-block
+		position: relative
+		margin: 10px 0 0
+		&:after
+			content: ''
+			position: absolute
+			font-size: 20px
+			right: 0
+			top: 0
+			width: 25px
+			height: 25px
+			z-index: 999
+			background-image: url('../img/select-button.png')
+			background-position: right
+			background-repeat: no-repeat
+			pointer-events: none
+		select
+			padding: 0 44px 0 13px
+			border: none
+			appearance: none
+			background: #f2f2f2
+			border-radius: 2px
+			height: 25px
+	.food-info
+		font-size: 12px
+		font-family: OpenSans-light, sans-serif
+	.food-price
+		display: flex
+		justify-content: space-between
+		margin: 25px 0
+		.food-price__span
+			font-family: RobotoSlab-Bold, sans-serif
+			font-size: 22px
+			.food-price__small
+				font-size: 12px
+				padding-left: 5px
+				vertical-align: top
+		.food-price__number
+			display: flex
+			justify-content: space-around
+			width: 50px
+			img
+				width: 13px
+				display: inline-block
+	.food-addtocard
+		a
+			padding: 13px 25px
+			text-align: center
+			display: flex
+			justify-content: space-between
+			text-transform: uppercase
+			border-radius: 5px
+			transition: all 0.2s
+			img
+				width: 22px
+			&:hover
+				background: #b33000
+.promo
+	background: url('../img/promo-bg.png') center no-repeat
+	.food-slide
+		background: white
+		position: relative
+		overflow: hidden
+		box-shadow: 0 0 1px #c5c4c47a
+		box-sizing: border-box
+		margin: 5px
+		padding: 10px 0 20px
+		.new-label
+			position: absolute
+			top: -20px
+			left: -20px
+	.link-block
+		margin: 30px 0
+		a
+			display: inline-block
+			font-size: 18px
+			font-family: OpenSans-Bold, sans-serif
+			color: #999999
+			margin: 0 11px
+		.active-link
+			color: #fd4f10
+.advantages__items
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.item
+		width: 200px
+		text-align: center
+		padding-bottom: 32px
+		font-size: 16px
+		line-height: 30px
+		img
+			display: block
+			margin: 0 auto 25px
+.contact
+	background: url('../img/form-bg.png') center no-repeat
+	color: white
+	padding: 70px
+	text-align: right
+	.contact__content
+		text-align: left
+		display: inline-block
+	h3
+		font-family: Lemontuesday, sans-serif
+		font-size: 54px
+		margin-top: 0
+	p
+		margin-top: 30px
+		font-size: 12px
+	form
+		input[type=submit]
+			font-size: 14px
+			font-family: OpenSans-Bold, sans-serif
+			text-transform: uppercase
+			padding: 15px 50px
+			border-radius: 5px
+			border: none
+			transition: all 0.2s
+			&:hover
+				cursor: pointer
+				background: #b33000
+		input[type=text]
+			background: none
+			border: none
+			border-bottom: 1px solid white
+			padding: 10px
+			color: white
+			margin-right: 35px
+			font-size: 14px
+			&::-webkit-input-placeholder
+				color: white
+			&::-moz-placeholder          
+				color: white
+			&:-moz-placeholder           
+				color: white
+			&:-ms-input-placeholder      
+				color: white
+			&:focus
+				background: #ffffff33
+				outline: 0
+    			outline-offset: 0
+.about__content
+	display: flex
+	justify-content: space-between
+	align-items: center
+	.about__content-text
+		width: 80%
+		padding: 20px 50px
+		h4
+			font-size: 24px
+			font-family: OpenSans-Bold, sans-serif
+		p
+			font-size: 14px
+.footer
+	background: #1a2d34
+	padding: 72px
+	font-size: 12px
+	flex: 0 0 auto
+	a
+		color: #6b96a5
+		transition: all 0.2s
+		&:hover
+			color: #d3f4ff
+	span
+		color: white
+		font-size: 14px
+	.footer__menu
+		display: flex
+		justify-content: space-between
+		font-size: 12px
+	.footer__menu-full
+		font-size: 14px
+		ul
+			margin: 0
+		li
+			line-height: 25px
+			a
+				color: white
+	.sets-wrap
+		display: flex
+		justify-content: space-between
+		.sets-left
+			width: 200px
+			padding: 0 10px 0 0
+	.footer__info
+		padding: 30px 0 0
+	.footer-copyright
+		text-transform: uppercase
+		margin-right: 130px
+	.personal-data
+		text-decoration: underline
+	.social
+		float: right
+		a
+			margin: 0 10px
+			&:hover
+				opacity: 0.5
+
+
+
+
+
